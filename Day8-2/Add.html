@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="Add.css">
+</head>
+<body>
+    <div class="container">
+        <div class="add-user-section">
+            <h2>Add User</h2>
+            <div class="form-group">
+                <label for="userName">Name:</label>
+                <input type="text" id="userName" placeholder="">
+                
+                <label for="userEmail">Email:</label>
+                <input type="email" id="userEmail" placeholder="">
+                
+                <label for="userRole">Role:</label>
+                <select id="userRole">
+                    <option value="Admin">Admin</option>
+                    <option value="User">User</option>
+
+                </select>
+                
+                <button id="addUserBtn" class="btn-add">Add User</button>
+            </div>
+        </div>
+
+        <div class="user-list-section">
+            <h2>User List</h2>
+            <table id="userTable">
+                
+                <tbody id="userTableBody">
+                    <tr>
+                        <td>1. User Name</td>
+                        <td>Email</td>
+                        <td>Role</td>
+                        <td>
+                            <button class="btn-edit">Edit</button>
+                            <button class="btn-delete">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2. User Name</td>
+                        <td>Email</td>
+                        <td>Role</td>
+                        <td>
+                            <button class="btn-edit">Edit</button>
+                            <button class="btn-delete">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="dist/add.js"></script>
+</body>
+</html>
