@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Management</title>
+    <link rel="stylesheet" href="index3.css">
+</head>
+<body>
+    <script src="index3.js"></script>
+
+
+  <div class="outer">
+        <div class="container">
+            <h1>Student Grades Manager</h1>
+            
+            <label for="StudentName">Student Name:</label>
+            <input type="text" id="StudentName" placeholder="Enter student name">
+            
+            <label for="grade">Grade:</label>
+            <input type="number" id="grade" placeholder="Enter grade" min="0" max="100">
+
+            <button class="btn" onclick="addStudent()">Add Student</button>
+            <button class="btn2" onclick="displayStudent()">Display Grades</button>
+
+            <h3>Grades List:</h3>
+            <ol id="gradesList"></ol>
+
+            <button class="btn3" onclick="calculateAverage()">Calculate Average Grade</button>
+
+            <div id="averageDisplay"></div>
+        </div>
+    </div>
+
+</body>
+</html>
