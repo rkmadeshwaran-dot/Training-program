@@ -542,7 +542,7 @@
                    <ul style="margin: 0.5rem 0;">
                        ${q.options.map((opt, i) => `
                            <li ${i === q.correct ? 'style="color: var(--success-color); font-weight: bold;"' : ''}>
-                               ${opt} ${i === q.correct ? '✓ (Correct)' : ''}
+                               ${opt} ${i === q.correct ? ' (Correct)' : ''}
                            </li>
                        `).join('')}
                    </ul>
