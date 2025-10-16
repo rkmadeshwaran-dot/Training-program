@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+ </head>
+ <body>
+   <header class="header">
+       <h1><i class='bx bx-building'></i> Claysys Quiz Platform</h1>
+       <div class="header-right">
+           <span id="userDisplay"></span>
+           <button class="theme-toggle" onclick="toggleTheme()"><i class='bx bx-moon'></i> Mode</button>
+       </div>
+   </header>
+
+   <!-- Admin Login Page -->
+   <div id="loginPage" class="page">
+       <div class="login-container">
+           <div class="login-icon">
+               <i class='bx bx-lock-alt'></i>
+           </div>
+           <h2>Admin Login</h2>
+           <div class="form-group">
+               <label>Username:</label>
+               <input type="text" id="loginUsername" placeholder="Enter username">
+           </div>
+           <div class="form-group">
+               <label>Password:</label>
+               <input type="password" id="loginPassword" placeholder="Enter password">
+           </div>
+           <div class="error-message" id="loginError">Invalid username or password</div>
+           <button class="btn btn-primary login-btn" onclick="adminLogin()">
+               <i class='bx bx-log-in'></i> Login
+           </button>
+           <div class="back-link">
+               <button onclick="showPage('courseSelectionPage')"> Back to Courses</button>
+           </div>
+       </div>
+   </div>
+
+   <!-- Course Selection Page -->
+   <div id="courseSelectionPage" class="page active">
+       <div class="container">
+           <h2 style="margin-bottom: 2rem;">Select a Course and Enter Your Name</h2>
+           <div class="course-grid" id="courseGrid"></div>
+           
+           <div class="recent-quizzes" id="recentQuizzesSection" style="display: none;">
+               <h3>Recent Quizzes</h3>
+               <div id="recentQuizzesList"></div>
+           </div>
+       </div>
+   </div>
+
+   <!-- Quiz Page -->
+   <div id="quizPage" class="page">
+       <div class="container">
+           <div class="quiz-header">
+               <div class="quiz-info">
+                   <div><strong>Course:</strong> <span id="quizCourseName"></span></div>
+                   <div><strong>User:</strong> <span id="quizUserName"></span></div>
+               </div>
+               <div class="timer" id="timer">Time: 00:00</div>
+           </div>
+
+           <div class="progress-bar">
+               <div class="progress-fill" id="progressFill"></div>
+           </div>
+
+           <div class="question-card">
+               <div class="question-text" id="questionText"></div>
+               <div class="answer-options" id="answerOptions"></div>
+           </div>
+
+           <div class="quiz-navigation">
+               <button class="btn btn-secondary" id="backBtn" onclick="previousQuestion()"> Back</button>
+               <button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()">Next </button>
+           </div>
+       </div>
+   </div>
+
+   <!-- Results Page -->
+   <div id="resultsPage" class="page">
+       <div class="container">
+           <div class="results-container">
+               <div class="score-display">
+                   <h2 id="finalScore">0%</h2>
+                   <p id="scoreText"></p>
+               </div>
+
+               <div class="question-review" id="questionReview"></div>
+
+               <div style="display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
+                   <button class="btn btn-primary" onclick="retakeQuiz()"><i class='bx bx-repeat'></i> Retake Quiz</button>
+                   <button class="btn btn-secondary" onclick="chooseAnotherCourse()"><i class='bx bx-book-open'></i> Choose Another Course</button>
+               </div>
+           </div>
+
+           <div class="leaderboard">
+               <h3><i class='bx bx-crown'></i> Leaderboard</h3>
+               <table id="leaderboardTable">
+                   <thead>
+                       <tr>
+                           <th>Rank</th>
+                           <th>Name</th>
+                           <th>Score</th>
+                           <th>Date</th>
+                       </tr>
+                   </thead>
+                   <tbody id="leaderboardBody"></tbody>
+               </table>
+           </div>
+       </div>
+   </div>
+
+   <!-- Admin Dashboard -->
+   <div id="adminPage" class="page">
+       <div class="container">
+           <div class="admin-nav">
+               <button class="btn btn-primary" onclick="showAdminSection('dashboard')">Dashboard</button>
+               <button class="btn btn-primary" onclick="showAdminSection('leaderboard')">Leaderboard</button>
+               <button class="btn btn-primary" onclick="showAdminSection('questions')">Manage Questions</button>
+               <button class="btn btn-danger" onclick="adminLogout()">Logout</button>
+           </div>
+
+           <!-- Dashboard Section -->
+           <div id="adminDashboard" class="admin-section">
+               <h2>Admin Dashboard</h2>
+               <div class="course-grid" id="adminStatsGrid"></div>
+           </div>
+
+           <!-- Leaderboard Management -->
+           <div id="adminLeaderboard" class="admin-section" style="display: none;">
+               <div class="admin-card">
+                   <h2>Manage Leaderboard</h2>
+                   <div class="form-group">
+                       <label>Select Course:</label>
+                       <select id="adminCourseSelect" onchange="loadLeaderboardData()"></select>
+                   </div>
+                   <div id="adminLeaderboardTable"></div>
+                   
+                   <h3 style="margin-top: 2rem;">Add Score Manually</h3>
+                   <div class="form-group">
+                       <label>User Name:</label>
+                       <input type="text" id="manualUserName">
+                   </div>
+                   <div class="form-group">
+                       <label>Score (%):</label>
+                       <input type="number" id="manualScore" min="0" max="100">
+                   </div>
+                   <button class="btn btn-success" onclick="addManualScore()">Add Score</button>
+               </div>
+           </div>
+
+           <!-- Question Management -->
+           <div id="adminQuestions" class="admin-section" style="display: none;">
+               <div class="admin-card">
+                   <h2>Create/Edit Quizzes</h2>
+                   <div class="form-group">
+                       <label>Select Course:</label>
+                       <select id="editCourseSelect" onchange="loadCourseQuestions()"></select>
+                   </div>
+                   
+                   <div id="questionsList"></div>
+                   
+                   <h3 style="margin-top: 2rem;">Add New Question</h3>
+                   <div class="form-group">
+                       <label>Question Text:</label>
+                       <textarea id="newQuestionText"></textarea>
+                   </div>
+                   <div class="form-group">
+                       <label>Option 1:</label>
+                       <input type="text" id="newOption1">
+                   </div>
+                   <div class="form-group">
+                       <label>Option 2:</label>
+                       <input type="text" id="newOption2">
+                   </div>
+                   <div class="form-group">
+                       <label>Option 3:</label>
+                       <input type="text" id="newOption3">
+                   </div>
+                   <div class="form-group">
+                       <label>Option 4:</label>
+                       <input type="text" id="newOption4">
+                   </div>
+                   <div class="form-group">
+                       <label>Correct Answer (1-4):</label>
+                       <select id="newCorrectAnswer">
+                           <option value="0">Option 1</option>
+                           <option value="1">Option 2</option>
+                           <option value="2">Option 3</option>
+                           <option value="3">Option 4</option>
+                       </select>
+                   </div>
+                   <button class="btn btn-success" onclick="addNewQuestion()">Add Question</button>
+               </div>
+           </div>
+       </div>
+   </div>
+   <script src="index.js"></script>
+ </body>
+ </html>
