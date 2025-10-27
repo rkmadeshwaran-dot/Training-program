@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Test\\source\\repos\\HelloWorldApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AB1B7B69-B176-44D5-B9D0-F6452D4F7F5E}|HelloWorldApp\\HelloWorldApp.csproj|c:\\users\\test\\source\\repos\\helloworldapp\\helloworldapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB1B7B69-B176-44D5-B9D0-F6452D4F7F5E}|HelloWorldApp\\HelloWorldApp.csproj|solutionrelative:helloworldapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Test\\source\\repos\\HelloWorldApp\\HelloWorldApp\\Program.cs",
+              "RelativeDocumentMoniker": "HelloWorldApp\\Program.cs",
+              "ToolTip": "C:\\Users\\Test\\source\\repos\\HelloWorldApp\\HelloWorldApp\\Program.cs",
+              "RelativeToolTip": "HelloWorldApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T05:44:07.104Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

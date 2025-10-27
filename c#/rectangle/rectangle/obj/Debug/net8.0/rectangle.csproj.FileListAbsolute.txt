@@ -1,0 +1,14 @@
+D:\c#\rectangle\rectangle\bin\Debug\net8.0\rectangle.exe
+D:\c#\rectangle\rectangle\bin\Debug\net8.0\rectangle.deps.json
+D:\c#\rectangle\rectangle\bin\Debug\net8.0\rectangle.runtimeconfig.json
+D:\c#\rectangle\rectangle\bin\Debug\net8.0\rectangle.dll
+D:\c#\rectangle\rectangle\bin\Debug\net8.0\rectangle.pdb
+D:\c#\rectangle\rectangle\obj\Debug\net8.0\rectangle.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\rectangle\rectangle\obj\Debug\net8.0\rectangle.AssemblyInfoInputs.cache
+D:\c#\rectangle\rectangle\obj\Debug\net8.0\rectangle.AssemblyInfo.cs
+D:\c#\rectangle\rectangle\obj\Debug\net8.0\rectangle.csproj.CoreCompileInputs.cache
+D:\c#\rectangle\rectangle\obj\Debug\net8.0\rectangle.dll
+D:\c#\rectangle\rectangle\obj\Debug\net8.0\refint\rectangle.dll
+D:\c#\rectangle\rectangle\obj\Debug\net8.0\rectangle.pdb
+D:\c#\rectangle\rectangle\obj\Debug\net8.0\rectangle.genruntimeconfig.cache
+D:\c#\rectangle\rectangle\obj\Debug\net8.0\ref\rectangle.dll

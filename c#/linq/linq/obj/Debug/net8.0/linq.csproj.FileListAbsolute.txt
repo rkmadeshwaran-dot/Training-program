@@ -1,0 +1,14 @@
+D:\c#\linq\linq\bin\Debug\net8.0\linq.exe
+D:\c#\linq\linq\bin\Debug\net8.0\linq.deps.json
+D:\c#\linq\linq\bin\Debug\net8.0\linq.runtimeconfig.json
+D:\c#\linq\linq\bin\Debug\net8.0\linq.dll
+D:\c#\linq\linq\bin\Debug\net8.0\linq.pdb
+D:\c#\linq\linq\obj\Debug\net8.0\linq.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\linq\linq\obj\Debug\net8.0\linq.AssemblyInfoInputs.cache
+D:\c#\linq\linq\obj\Debug\net8.0\linq.AssemblyInfo.cs
+D:\c#\linq\linq\obj\Debug\net8.0\linq.csproj.CoreCompileInputs.cache
+D:\c#\linq\linq\obj\Debug\net8.0\linq.dll
+D:\c#\linq\linq\obj\Debug\net8.0\refint\linq.dll
+D:\c#\linq\linq\obj\Debug\net8.0\linq.pdb
+D:\c#\linq\linq\obj\Debug\net8.0\linq.genruntimeconfig.cache
+D:\c#\linq\linq\obj\Debug\net8.0\ref\linq.dll

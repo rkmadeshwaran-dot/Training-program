@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\c#\\even number\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3956E05C-C390-435C-82E2-935ECA00DD26}|even number\\even number.csproj|d:\\c#\\even number\\even number\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3956E05C-C390-435C-82E2-935ECA00DD26}|even number\\even number.csproj|solutionrelative:even number\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\c#\\even number\\even number\\Program.cs",
+              "RelativeDocumentMoniker": "even number\\Program.cs",
+              "ToolTip": "D:\\c#\\even number\\even number\\Program.cs*",
+              "RelativeToolTip": "even number\\Program.cs*",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T09:38:36.339Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

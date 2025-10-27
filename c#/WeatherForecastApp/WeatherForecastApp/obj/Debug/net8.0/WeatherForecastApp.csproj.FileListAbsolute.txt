@@ -1,0 +1,17 @@
+D:\c#\WeatherForecastApp\WeatherForecastApp\bin\Debug\net8.0\WeatherForecastApp.exe
+D:\c#\WeatherForecastApp\WeatherForecastApp\bin\Debug\net8.0\WeatherForecastApp.deps.json
+D:\c#\WeatherForecastApp\WeatherForecastApp\bin\Debug\net8.0\WeatherForecastApp.runtimeconfig.json
+D:\c#\WeatherForecastApp\WeatherForecastApp\bin\Debug\net8.0\WeatherForecastApp.dll
+D:\c#\WeatherForecastApp\WeatherForecastApp\bin\Debug\net8.0\WeatherForecastApp.pdb
+D:\c#\WeatherForecastApp\WeatherForecastApp\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\c#\WeatherForecastApp\WeatherForecastApp\obj\Debug\net8.0\WeatherForecastApp.csproj.AssemblyReference.cache
+D:\c#\WeatherForecastApp\WeatherForecastApp\obj\Debug\net8.0\WeatherForecastApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\WeatherForecastApp\WeatherForecastApp\obj\Debug\net8.0\WeatherForecastApp.AssemblyInfoInputs.cache
+D:\c#\WeatherForecastApp\WeatherForecastApp\obj\Debug\net8.0\WeatherForecastApp.AssemblyInfo.cs
+D:\c#\WeatherForecastApp\WeatherForecastApp\obj\Debug\net8.0\WeatherForecastApp.csproj.CoreCompileInputs.cache
+D:\c#\WeatherForecastApp\WeatherForecastApp\obj\Debug\net8.0\WeatherF.64F08301.Up2Date
+D:\c#\WeatherForecastApp\WeatherForecastApp\obj\Debug\net8.0\WeatherForecastApp.dll
+D:\c#\WeatherForecastApp\WeatherForecastApp\obj\Debug\net8.0\refint\WeatherForecastApp.dll
+D:\c#\WeatherForecastApp\WeatherForecastApp\obj\Debug\net8.0\WeatherForecastApp.pdb
+D:\c#\WeatherForecastApp\WeatherForecastApp\obj\Debug\net8.0\WeatherForecastApp.genruntimeconfig.cache
+D:\c#\WeatherForecastApp\WeatherForecastApp\obj\Debug\net8.0\ref\WeatherForecastApp.dll
